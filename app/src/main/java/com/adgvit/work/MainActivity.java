@@ -4,11 +4,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.CompoundButton;
 import android.widget.Switch;
-import android.widget.ToggleButton;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
-    private ToggleButton toggleButton;
     private Switch aSwitch;
+    private TextView txt1;
+    private TextView txt2;
+    private TextView txt3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,18 +21,21 @@ public class MainActivity extends AppCompatActivity {
         aSwitch = (Switch) findViewById(R.id.switch1);
         aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked == true) {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) { //Toggle and Switch are compound buttons
+                if(isChecked) {
                     //show Pending work
-                    aSwitch.setText("Pending");
+                    aSwitch.setText(R.string.pendingChange);
                     showPending();
                 } else {
                     //show Completed work
-                    aSwitch.setText("Completed");
+                    aSwitch.setText(R.string.compeleteChange);
                     showCompleted();
                 }
             }
         });
+        txt1 = (TextView) findViewById(R.id.txt1);
+        txt2 = (TextView) findViewById(R.id.txt2);
+        txt3 = (TextView) findViewById(R.id.txt3);
     }
 
     private void showCompleted() {
