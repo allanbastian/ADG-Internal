@@ -47,6 +47,15 @@
         android:layout_below="@+id/txt3"
         android:layout_marginTop="20dp"
         android:text="@string/switchText"
-        android:textColor="#387AFE"/>
+        android:textColor="#387AFE"
+        android:paddingBottom="10dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/container"
+        android:layout_below="@+id/switch1">
+
+    </android.support.v4.view.ViewPager>
 
 </RelativeLayout>

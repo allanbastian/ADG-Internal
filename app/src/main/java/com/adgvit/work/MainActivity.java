@@ -1,5 +1,6 @@
 package com.adgvit.work;
 
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.CompoundButton;
@@ -8,9 +9,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private Switch aSwitch;
-    private TextView txt1;
-    private TextView txt2;
-    private TextView txt3;
+    private TextView txt1, txt2, txt3;
+    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         txt2 = (TextView) findViewById(R.id.txt2);
         txt3 = (TextView) findViewById(R.id.txt3);
         getEventDetails();
+        viewPager = (ViewPager) findViewById(R.id.container);
+
     }
 
     private void getEventDetails() {
