@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txt1"
         android:layout_marginStart="20dp"
+        android:layout_marginBottom="08dp"
         android:text="@string/eventName"
         android:textSize="35sp"
         android:textColor="#000000"
@@ -46,6 +47,6 @@
         android:layout_below="@+id/txt3"
         android:layout_marginTop="20dp"
         android:text="@string/switchText"
-        android:textColor="@color/colorPrimary"/>
+        android:textColor="#387AFE"/>
 
 </RelativeLayout>

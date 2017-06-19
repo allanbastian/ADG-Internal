@@ -34,11 +34,18 @@ public class MainActivity extends AppCompatActivity {
         txt1 = (TextView) findViewById(R.id.txt1);
         txt2 = (TextView) findViewById(R.id.txt2);
         txt3 = (TextView) findViewById(R.id.txt3);
+        getEventDetails();
+    }
+
+    private void getEventDetails() {
+        //function to replace text view details to show event details
     }
 
     private void showCompleted() {
+        //function to show Completed tasks in the recycler view
     }
 
     private void showPending() {
+        //function to show Pending tasks in the recycler view
     }
 }
