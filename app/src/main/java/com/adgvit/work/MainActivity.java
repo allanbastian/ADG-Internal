@@ -1,17 +1,13 @@
 package com.adgvit.work;
 
+import android.os.Bundle;
 import android.support.v4.view.PagerTabStrip;
-import android.support.v4.view.PagerTitleStrip;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.TypedValue;
-import android.widget.CompoundButton;
-import android.widget.Switch;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private Switch aSwitch;
     private TextView Event, DateTime, Venue;
     private ViewPager viewPager;
     private PagerTabStrip tabs;
@@ -20,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Initalization
         Event = (TextView) findViewById(R.id.txt1);
         DateTime = (TextView) findViewById(R.id.txt2);
         Venue = (TextView) findViewById(R.id.txt3);
@@ -29,6 +26,13 @@ public class MainActivity extends AppCompatActivity {
         tabs = (PagerTabStrip) findViewById(R.id.tabStrip);
         tabs.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 24);
 
+        //getting details of event
+        Event = getEvent();
+        setEvent(Event);
+        DateTime = getDateTime();
+        setDateTime(DateTime);
+        Venue = getVenue();
+        setVenue(Venue);
     }
 
     private void showCompleted() {
