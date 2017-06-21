@@ -1,9 +1,11 @@
 package com.adgvit.work;
 
 import android.support.v4.view.PagerTabStrip;
+import android.support.v4.view.PagerTitleStrip;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         myFragmentPageAdapter adapter = new myFragmentPageAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
         tabs = (PagerTabStrip) findViewById(R.id.tabStrip);
+        tabs.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 24);
 
     }
 
