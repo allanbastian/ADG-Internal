@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    
     tools:context="com.adgvit.work.MainActivity">
 
     <TextView
@@ -37,24 +37,23 @@
         android:layout_below="@+id/txt2"
         android:text="@string/venue"
         android:textColor="#000000"
+        android:paddingBottom="8dp"
         />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/txt3"
-        android:layout_marginTop="20dp"
-        android:text="@string/switchText"
-        android:textColor="#387AFE"
-        android:paddingBottom="10dp"/>
 
     <android.support.v4.view.ViewPager
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/container"
-        android:layout_below="@+id/switch1">
+        android:id="@+id/pager"
+        android:layout_below="@+id/txt3">
+
+        <android.support.v4.view.PagerTabStrip
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabStrip"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+        </android.support.v4.view.PagerTabStrip>
 
     </android.support.v4.view.ViewPager>
 

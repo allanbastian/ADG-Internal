@@ -1,5 +1,6 @@
 package com.adgvit.work;
 
+import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,38 +10,22 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private Switch aSwitch;
-    private TextView txt1, txt2, txt3;
+    private TextView Event, DateTime, Venue;
     private ViewPager viewPager;
+    private PagerTabStrip tabs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        aSwitch = (Switch) findViewById(R.id.switch1);
-        aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) { //Toggle and Switch are compound buttons
-                if(isChecked) {
-                    //show Pending work
-                    aSwitch.setText(R.string.pendingChange);
-                    showPending();
-                } else {
-                    //show Completed work
-                    aSwitch.setText(R.string.compeleteChange);
-                    showCompleted();
-                }
-            }
-        });
-        txt1 = (TextView) findViewById(R.id.txt1);
-        txt2 = (TextView) findViewById(R.id.txt2);
-        txt3 = (TextView) findViewById(R.id.txt3);
-        getEventDetails();
-        viewPager = (ViewPager) findViewById(R.id.container);
+        Event = (TextView) findViewById(R.id.txt1);
+        DateTime = (TextView) findViewById(R.id.txt2);
+        Venue = (TextView) findViewById(R.id.txt3);
+        viewPager = (ViewPager) findViewById(R.id.pager);
+        myFragmentPageAdapter adapter = new myFragmentPageAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
+        tabs = (PagerTabStrip) findViewById(R.id.tabStrip);
 
-    }
-
-    private void getEventDetails() {
-        //function to replace text view details to show event details
     }
 
     private void showCompleted() {
@@ -50,4 +35,18 @@ public class MainActivity extends AppCompatActivity {
     private void showPending() {
         //function to show Pending tasks in the recycler view
     }
+
+    public TextView getEvent() { return Event; }
+
+    public void setEvent(TextView event) { this.Event = event; }
+
+    public TextView getDateTime() { return DateTime; }
+
+    public void setDateTime(TextView dateTime) { this.DateTime = dateTime; }
+
+    public TextView getVenue() { return Venue; }
+
+    public void setVenue(TextView venue) { this.Venue = venue; }
+
+
 }
