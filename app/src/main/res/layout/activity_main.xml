@@ -47,9 +47,12 @@
         android:layout_below="@+id/txt3">
 
         <android.support.v4.view.PagerTabStrip
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tabStrip"
+            android:foregroundGravity="center"
+            android:textAlignment="center"
+            android:textColor="#387AFE"
             android:paddingTop="4dp"
             android:paddingBottom="4dp">
 
