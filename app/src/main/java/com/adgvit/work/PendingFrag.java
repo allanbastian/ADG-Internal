@@ -22,7 +22,7 @@ public class PendingFrag extends Fragment {
         adapter = new RecyclerAdapter(getActivity(), getData());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        return super.onCreateView(inflater, container, savedInstanceState);
+        return rootView;
     }
 
     private List<Item> getData() {
