@@ -19,7 +19,7 @@
         android:text="@string/dateCompleted"
         android:layout_below="@+id/day"
         android:paddingStart="10dp"
-        android:paddingEnd="15dp"/>
+        android:paddingEnd="10dp"/>
 
     <TextView
         android:layout_width="wrap_content"
