@@ -6,4 +6,8 @@
     <string name="eventName">Event</string>
     <string name="date_time">date, time</string>
     <string name="venue">Venue</string>
+    <string name="dateCompleted">Date</string>
+    <string name="workCompleted">Work</string>
+    <string name="nameCompleted">Name of the member</string>
+    <string name="dayCompleted">Day</string>
 </resources>

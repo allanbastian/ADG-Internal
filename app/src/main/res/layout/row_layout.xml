@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/day"
-        android:text="Day"
+        android:text="@string/dayCompleted"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"/>
 
@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/date"
-        android:text="Date"
+        android:text="@string/dateCompleted"
         android:layout_below="@+id/day"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"/>
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/work"
-        android:text="Work"
+        android:text="@string/workCompleted"
         android:textStyle="bold"
         android:layout_toEndOf="@+id/day"/>
 
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/name"
-        android:text="Name of the member"
+        android:text="@string/nameCompleted"
         android:layout_below="@+id/work"
         android:layout_toEndOf="@+id/date"/>
 

@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         setDateTime(DateTime);
         Venue = getVenue();
         setVenue(Venue);
+
+
     }
 
     private void showCompleted() {
