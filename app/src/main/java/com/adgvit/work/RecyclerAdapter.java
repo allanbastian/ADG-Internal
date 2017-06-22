@@ -44,6 +44,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         return data.size();
     }
 
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
+    }
+
     class MyViewHolder extends RecyclerView.ViewHolder {
         TextView Day, Date, Work, Name;
         public MyViewHolder(View itemView) {

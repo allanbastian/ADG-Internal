@@ -30,7 +30,7 @@ public class CompletedFrag extends Fragment {
         String[] dates = {"01/01", "02/02", "03/03", "04/04", "05/05", "06/06", "07/07"};
         String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
         String[] tasks = {"Permission", "Desk duty", "Poster", "Meeting", "Messaging", "Make design", "Report to abc"};
-        String[] names = {"A", "B", "C", "D", "E", "F", "G", "H"};
+        String[] names = {"A", "B", "C", "D", "E", "F", "G"};
         for(int i = 0; i < names.length; i++) {
             Item current = new Item();
             current.Date = dates[i];
