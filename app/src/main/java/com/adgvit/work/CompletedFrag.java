@@ -27,10 +27,10 @@ public class CompletedFrag extends Fragment {
 
     private List<Item> getData() {
         List<Item> data = new ArrayList<>();
-        String[] dates = {"01/01", "02/02", "03/03", "04/04", "05/05", "06/06", "07/07"};
+        String[] dates = {"DD/MM/YY", "DD/MM/YY", "DD/MM/YY", "DD/MM/YY", "DD/MM/YY", "DD/MM/YY", "DD/MM/YY",};
         String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
-        String[] tasks = {"Permission", "Desk duty", "Poster", "Meeting", "Messaging", "Make design", "Report to abc"};
-        String[] names = {"A", "B", "C", "D", "E", "F", "G"};
+        String[] names = {"Name of the member", "Name of the member", "Name of the member", "Name of the member", "Name of the member", "Name of the member", "Name of the member"};
+        String[] tasks = {"Task allotted", "Task allotted", "Task allotted", "Task allotted", "Task allotted", "Task allotted", "Task allotted"};
         for(int i = 0; i < names.length; i++) {
             Item current = new Item();
             current.Date = dates[i];

@@ -27,7 +27,7 @@
         android:id="@+id/work"
         android:text="@string/workCompleted"
         android:textStyle="bold"
-        android:layout_toEndOf="@+id/day"/>
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,6 +35,6 @@
         android:id="@+id/name"
         android:text="@string/nameCompleted"
         android:layout_below="@+id/work"
-        android:layout_toEndOf="@+id/date"/>
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

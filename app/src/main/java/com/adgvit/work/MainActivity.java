@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
     private void showCompleted() {
         //function to show Completed tasks in the recycler view
     }
-
     private void showPending() {
         //function to show Pending tasks in the recycler view
     }

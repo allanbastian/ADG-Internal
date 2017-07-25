@@ -27,10 +27,10 @@ public class PendingFrag extends Fragment {
 
     private List<Item> getData() {
         List<Item> data = new ArrayList<>();
-        String[] dates = {"06/06", "07/07", "08/08", "09/09", "10/10", "11/11", "12/12"};
-        String[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
-        String[] tasks = {"Permission", "Desk duty", "Poster", "Meeting", "Messaging", "Make design", "Report to xyz"};
-        String[] names = {"I", "J", "K", "L", "M", "N","O"};
+        String[] dates = {"DD/MM/YY", "DD/MM/YY", "DD/MM/YY", "DD/MM/YY", "DD/MM/YY", "DD/MM/YY", "DD/MM/YY",};
+        String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+        String[] names = {"Name of the member", "Name of the member", "Name of the member", "Name of the member", "Name of the member", "Name of the member", "Name of the member"};
+        String[] tasks = {"Task allotted", "Task allotted", "Task allotted", "Task allotted", "Task allotted", "Task allotted", "Task allotted"};
         for(int i = 0; i < names.length; i++) {
             Item current = new Item();
             current.Date = dates[i];
